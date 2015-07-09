@@ -1,0 +1,29 @@
+<div id = "container" >
+  <div class="jumbotron-narrow">
+   <h1>Hey <%=session.user.username %> start chatting </h1></br>
+   <input type="text" id="my-name"><button id = "update-name">Update username </button>
+  </div>
+<div id="main" style="margin:20px">
+  <h1 style="display:none">Users online</h1>
+  <div>
+
+      <select id="users-list" size="5" style="display:none"></select>
+      <div id="convos"></div>
+  </div>
+  <h1>Chat rooms</h1>
+  <div>
+    <ul id="sidebar" class="nav nav-pills nav-stacked" style="max-width: 200px;">
+      <li><select id="rooms-list" size="5"></select></li>
+    </ul>  
+      <button id="join-room">Join selected room</button>
+      <button id="new-room">Start a new room</button>
+      <div id="rooms"></div>
+  </div>
+</div>
+</div>
+
+
+<div id="disconnect" style="display:none">Waiting for reconnect...</div>
+
+
+
